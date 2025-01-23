@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include amCharts 5 libraries -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="mainWindow">
+        <div class="Header"> 
+            <p>
+                Real Time Temperature Monitoring System - CFS 
+            </p>
+        </div>
+        <div class="mainArea">
+            <div class="sensor"></div>
+            <div class="table">
+                <div class="vol">
+                  <div class="mVol">
+                    <div class="voltTitle">
+                      <p>Battery Voltage : </p>
+                    </div>
+                    <div class="voltValue">
+                      <p> 12 V</p>
+                    </div> 
+                  </div>
+
+
+                  <div class="mVol">
+                    <div class="voltTitle">
+                      <p>External Voltage :</p>
+                    </div>
+                    <div class="voltValue">
+                      <p> 23 V</p>
+                    </div> 
+                  </div>
+
+
+                  <div class="mVol">
+                    <div class="voltTitle">
+                      <p>External Voltage :</p>
+                    </div>
+                    <div class="voltValue">
+                      <p> 10 V</p>
+                    </div> 
+                  </div>
+                </div>
+
+
+
+
+
+
+                <div class="tableArea">
+                    <div class="table-container">
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        <div class="table-row">
+                          <div class="location">COOL ROOM - H</div>
+                          <div class="signal-barTable">
+                            <div class="level-1"></div>
+                            <div class="level-2"></div>
+                            <div class="level-3"></div>
+                            <div class="level-4"></div>
+                            <div class="level-5"></div>
+                          </div>
+                          <div class="status-indicator">
+                            <span class="indicator"></span>
+                          </div>
+                        </div>
+
+                        
+
+
+
+
+
+
+
+
+                      </div>
+                  </div>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="res/logo_company.png" alt="Footer Image" style="height: 80%; width: auto; margin-top: 6px; margin-left: 13px" />
+            <p style="font-size: 30px; margin-left: 20px; margin-top: 20px">
+              E Gravity Solutions (Pvt) Ltd.
+            </p>
+            <div class="date-time" id="dateTime"></div>
+              <!-- Date and Time will be displayed here -->
+          </div>
+        </div>
+    </div>
+
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+
+        const hours = now.getHours();
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        const seconds = now.getSeconds().toString().padStart(2, '0');
+
+        // Convert 24-hour format to 12-hour format
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        const hour12 = hours % 12 || 12;
+
+        const date = now.toLocaleDateString(); // Get the current date
+
+        // Display date and time in the right corner
+        document.getElementById('dateTime').innerHTML = `${date} ${hour12}:${minutes}:${seconds} ${ampm}`;
+    }
+
+    // Update the time every second
+    setInterval(updateDateTime, 1000);
+
+        const temperatures = [
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            [20, 25, 30],
+            [20, 40, 60],
+            
+        ];
+        // Function to dynamically create r1 divs and add amCharts inside them
+        function createAndFillR1(container, count  ) {
+            for (let i = 0; i < count; i++) {
+                const r1Div = document.createElement('div');
+                r1Div.className = 'r1';
+
+                // Add text to appear on top of the r1 div
+                const textOnTop = document.createElement('div');
+                textOnTop.className = 'textOnTop';
+                textOnTop.innerText = `COOL ROOM - H `;
+
+                // Create a new div under the textOnTop and above the innerDiv
+                const middleDiv = document.createElement('div');
+                middleDiv.className = 'middleDiv';
+                middleDiv.style.display = 'flex';
+                middleDiv.style.flexDirection = 'column'; 
+                // middleDiv.innerText = 'Temprature'; // You can add styles for this div
+
+                // Create the top and bottom rows inside middleDiv
+                const topRow = document.createElement('div');
+                topRow.className = 'topRow';
+                topRow.style.display = 'flex';
+                topRow.style.flexDirection = 'row'; // Make the topRow a row for columns
+
+
+
+                // Create two columns inside topRow
+                const column1 = document.createElement('div');
+                column1.className = 'column1';
+                 // Add your content for column 1 here
+                column1.style.flex = '1';
+                column1.style.display = 'flex';
+                column1.style.flexDirection = 'row' ; // Flex property to evenly distribute space
+
+                // const door = document.createElement('div');
+                // door.className = 'door';
+                // door.innerText = 'D'
+
+                const door = document.createElement('div');
+                door.className = 'door';
+                door.style.display = 'flex';
+                door.style.flexDirection = 'row-reverse'; // This will make the text come from the right
+
+                door.innerHTML = `
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-door-off">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21h18" />
+                    <path d="M6 21v-15" />
+                    <path d="M7.18 3.175c.25 -.112 .528 -.175 .82 -.175h8a2 2 0 0 1 2 2v9" />
+                    <path d="M18 18v3" />
+                    <path d="M3 3l18 18" />
+                  </svg>
+                 
+                `;
+
+                const power = document.createElement('div');
+                power.className = 'power';
+                power.style.display = 'flex';
+                power.style.flexDirection = 'row-reverse'; // This will make the text come from the right
+
+                power.innerHTML = `
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="limegreen"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-power">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M7 6a7.75 7.75 0 1 0 10 0" />
+                  <path d="M12 4l0 8" />
+                </svg>
+                
+              `;
+
+
+                column1.appendChild(door);
+                column1.appendChild(power);
+
+
+                const column2 = document.createElement('div');
+                column2.className = 'column2';
+                 // Add your content for column 2 here
+                column2.style.flex = '1'; // Flex property to evenly distribute space
+                column2.style.display ='flex';
+                column2.style.flexDirection = 'row'
+
+                
+
+                const battery = document.createElement('div');
+                battery.className = 'battery';
+                battery.style.display = 'flex';
+                battery.style.flexDirection = 'row-reverse'; // This will make the text come from the right currentColor
+
+                battery.innerHTML = `
+                 <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-battery-1">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 7h11a2 2 0 0 1 2 2v.5a.5 .5 0 0 0 .5 .5a.5 .5 0 0 1 .5 .5v3a.5 .5 0 0 1 -.5 .5a.5 .5 0 0 0 -.5 .5v.5a2 2 0 0 1 -2 2h-11a2 2 0 0 1 -2 -2v-6a2 2 0 0 1 2 -2" /><path d="M7 10l0 4" />
+                  </svg>
+                `;
+
+                column2.appendChild(battery);
+
+
+
+                const signal = document.createElement('div');
+                signal.className = 'signal';
+                signal.style.display = 'flex';
+                signal.style.flexDirection = 'row-reverse'; // This will make the text come from the right
+
+                signal.innerHTML = `
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="limegreen"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-antenna-bars-5">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 18l0 -3" />
+                    <path d="M10 18l0 -6" />
+                    <path d="M14 18l0 -9" />
+                    <path d="M18 18l0 -12" />
+                  </svg>
+                `;
+
+                column2.appendChild(signal);
+
+
+              //   column1.innerHTML = `
+              //   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-door-off">
+              //     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              //     <path d="M3 21h18" />
+              //     <path d="M6 21v-15" />
+              //     <path d="M7.18 3.175c.25 -.112 .528 -.175 .82 -.175h8a2 2 0 0 1 2 2v9" />
+              //     <path d="M18 18v3" />
+              //     <path d="M3 3l18 18" />
+              //   </svg>
+              // `;
+
+
+                // Append the two columns to topRow
+                topRow.appendChild(column1);
+                topRow.appendChild(column2);
+               
+                 // Use the temperatures array to fill the topRow content
+                // const [temp1, temp2, temp3] = temperatures[i]; // Destructure the temperature data for this iteration
+                // topRow.innerText = `Sensor 1: ${temp1}°C\nSensor 2: ${temp2}°C\nSensor 3: ${temp3}°C`;
+
+
+                
+                const bottomRow = document.createElement('div');
+                bottomRow.className = 'bottomRow';
+                bottomRow.style.display = 'flex';
+                bottomRow.style.flexDirection = 'row'; // Make the bottomRow a row for columns
+                
+                const tList = document.createElement('div');
+                tList.className = 'tList'
+                // tList.innerText = 'Text'// Make the bottomRow a row for columns
+
+                const [temp1, temp2, temp3] = temperatures[i]; // Destructure the temperature data for this iteration
+
+                // Define the three specific background colors
+                const bgColor1 = 'red';    // Background color for S1
+                const bgColor2 = 'green';  // Background color for S2
+                
+
+                 tList.innerHTML = `
+                    <span >
+                        <span class="tem" >S1:</span>
+                        <span class="val" style="background-color: ${bgColor1}; ">${temp1}°C   </span>,
+                    </span>
+                    <span >
+                        <span class="tem" >S2:</span>
+                        <span class="val" style="background-color: ${bgColor2}; ">${temp2}°C   </span>,
+                    </span>
+                   
+                `;
+
+                bottomRow.appendChild(tList);
+
+                // Append the top and bottom rows to middleDiv
+                middleDiv.appendChild(topRow);
+                middleDiv.appendChild(bottomRow);
+
+
+                // const [temp1, temp2, temp3] = temperatures[i]; 
+                // middleDiv.innerText =  `Sensor 1: ${temp1}°C\nSensor 2: ${temp2}°C\nSensor 3: ${temp3}°C`;
+
+                // <span >
+                //         <span class="tem" >S3:</span>
+                //         <span class="val" style="background-color: ${bgColor3}; ">${temp3}°C</span>
+                //     </span>
+        
+
+                // Create the inner div
+                const innerDiv = document.createElement('div');
+                innerDiv.className = 'innerDiv';
+                innerDiv.id = `slideChartdiv-${i}`; // Unique ID for each chart div
+
+                // Append the textOnTop and innerDiv to the r1 div
+                r1Div.appendChild(textOnTop);
+                r1Div.appendChild(middleDiv); // Insert the new div here
+                r1Div.appendChild(innerDiv);
+
+                // Append the r1 div to the container
+                container.appendChild(r1Div);
+
+                // Render the amChart inside the innerDiv
+                renderChart(`slideChartdiv-${i}`);
+            }
+        }
+
+        
+
+        // Select the sensor container
+        const sensorContainer = document.querySelector('.sensor');
+
+        // Add the specified number of r1 divs
+        const numberOfR1Divs = 18; // Adjust this number as per your requirement
+        createAndFillR1(sensorContainer, numberOfR1Divs);
+
+        // Function to render the amChart in each innerDiv
+        function renderChart(chartDivId) {
+            am5.ready(function () {
+                var root = am5.Root.new(chartDivId);
+                root._logo.dispose();
+
+                root.setThemes([am5themes_Animated.new(root)]);
+
+                var value = 20;
+                function generateChartData() {
+                    var chartData = [];
+                    var firstDate = new Date();
+                    firstDate.setDate(firstDate.getDate() - 1000);
+                    firstDate.setHours(0, 0, 0, 0);
+
+                    for (var i = 0; i < 50; i++) {
+                        var newDate = new Date(firstDate);
+                        newDate.setSeconds(newDate.getSeconds() + i);
+                        value += (Math.random() < 0.5 ? 1 : -1) * Math.random() * 2;
+                        chartData.push({ date: newDate.getTime(), value: value });
+                    }
+                    return chartData;
+                }
+
+                var data = generateChartData();
+
+                var chart = root.container.children.push(
+                    am5xy.XYChart.new(root, {
+                        focusable: true,
+                        panX: true,
+                        panY: true,
+                        wheelX: "panX",
+                        wheelY: "zoomX",
+                        pinchZoomX: true,
+                    })
+                );
+
+                var xAxis = chart.xAxes.push(
+                    am5xy.DateAxis.new(root, {
+                        baseInterval: { timeUnit: "second", count: 1 },
+                        renderer: am5xy.AxisRendererX.new(root, { minGridDistance: 50 }),
+                    })
+                );
+
+                var yAxis = chart.yAxes.push(
+                    am5xy.ValueAxis.new(root, {
+                        min: -10,
+                        max: 50,
+                        renderer: am5xy.AxisRendererY.new(root, {}),
+                    })
+                );
+
+                // Set axis labels to white
+                xAxis.get("renderer").labels.template.set("fill", am5.color(0xffffff)); // Change x-axis labels to white
+                yAxis.get("renderer").labels.template.set("fill", am5.color(0xffffff));
+
+                var series = chart.series.push(
+                    am5xy.LineSeries.new(root, {
+                        name: "Temperature",
+                        xAxis: xAxis,
+                        yAxis: yAxis,
+                        valueYField: "value",
+                        valueXField: "date",
+                        tooltip: am5.Tooltip.new(root, { labelText: "{valueY}°C" }),
+                    })
+                );
+                series.data.setAll(data);
+
+                chart.set(
+                    "cursor",
+                    am5xy.XYCursor.new(root, { xAxis: xAxis, lineY: { visible: false } })
+                );
+
+                setInterval(function () {
+                    addData(series);
+                }, 1000);
+
+                function addData(series) {
+                    var lastDataItem = series.dataItems[series.dataItems.length - 1];
+                    var newValue = value + (Math.random() < 0.5 ? 1 : -1) * Math.random() * 2;
+                    var lastDate = new Date(lastDataItem.get("valueX"));
+                    var time = am5.time.add(new Date(lastDate), "second", 1).getTime();
+                    series.data.removeIndex(0);
+                    series.data.push({ date: time, value: newValue });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

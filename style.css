@@ -1,0 +1,364 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.mainWindow {
+    width: 1920px;
+    height: 1080px;
+    background-color: #151f2c;
+}
+.Header {
+    border-radius: 14px;
+    height: 80px;
+    width: 1365px;
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    margin-top: 10px;
+    margin-left: 284px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+p {
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+    /* font-weight: bold; */
+    margin-top: 15px;
+}
+.mainArea {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 880px;
+    position: relative;
+}
+.sensor {
+    width: 1500px;
+    height: 100%;
+    background-color: #151f2c;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+
+/* .sensor {
+    left: 7px;
+    position: absolute;
+    width: 1500px;
+    height: 100%;
+    background-color: #151f2c;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.table {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    right: 8px;
+    display: flex
+;
+    flex-direction: column;
+} */
+.r1 {
+    width: 250px;
+    height: 33.4%;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    position: relative;
+}
+.textOnTop {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    /* font-weight: bold; */
+    z-index: 2;
+}
+.innerDiv {
+    font-size: 20px;
+    width: 238px;
+    height: 147px;
+    background-color: #000000;
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.textOnTop {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    /* top: 10px;
+    left: 35%; */
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    z-index: 2; 
+}
+.middleDiv {
+    width: 238px;
+    height: 92px;
+    /* background-color: #000000; */
+    color: aliceblue;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    
+    font-weight: bold;
+    /* white-space: pre-line; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topRow, .bottomRow {
+    
+    text-align: center;
+
+     /* Add styling as needed */
+}
+
+.tem{
+    justify-content: center;
+    color: #ffc400;
+    padding: 8px;
+    font-size: 14px;
+}
+.val{
+    font-size: 31px;
+    background-color: #ffc400;
+}
+
+.topRow {
+    /* background-color: #000000; */
+    height: 35px;
+    display: flex;
+    /* border: 1px solid wheat; */
+    margin-bottom: 3px;
+}
+
+.tList{
+    margin-top: 12px;
+    width: 100%;
+    height: 58%;
+    /* background-color: #ffc400; */
+}
+
+.column1{
+    background-color: #000000;
+    /* border: 1px solid white; */
+}
+.door{
+    text-align: start;
+    margin-top: 2px;
+    height: 25px;
+    background-color: #000000;
+    /* border: 1px solid white; */
+    width: 36%;
+}
+.power{
+    margin-top: 2px;
+    height: 25px;
+    background-color: #000000;
+    /* border: 1px solid white; */
+    width: 35%;
+}
+.column2{
+    background-color: #000000;
+}
+.signal{
+    
+    margin-top: 2px;
+    height: 25px;
+    background-color: #000000;
+    /* border: 1px solid white; */
+    width: 36%;
+}
+.battery{
+    margin-left: 22px;
+    margin-top: 2px;
+    height: 25px;
+    background-color: #000000;
+    /* border: 1px solid white; */
+    width: 36%;
+}
+/* .door {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+} */
+
+
+.bottomRow {
+    background-color: #000000;
+    height: 50px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.table {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.vol {
+    width: 400px;
+    height: 140px;
+    /* border: 1px solid #000000; */
+    background-color: #000000;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.mVol{
+    width: 400px;
+    height: 33%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: aliceblue; */
+    /* border: 1px solid #ff0000; */
+}
+.voltTitle{
+    width: 250px;
+    height: 100%;
+    /* border: 1px solid #ff0000; */
+}
+.voltTitle p {
+    /* text-align: center; */
+    color: #ffc400;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.voltValue{
+    width: 150px;
+    height: 100%;
+    /* border: 1px solid #ff0000; */
+}
+.voltValue p {
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.tableArea {
+    width: 400px;
+    height: 730px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+}
+.table-row {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    /* border-bottom: 1px solid #ff0000; */
+}
+.location {
+    width: 230px;
+    height: auto;
+    text-align: start;
+    margin-left: 10px;
+    color: white;
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+
+.signal-barTable {
+    left: 45px;
+    position: relative;
+    width: 29px;
+    /* margin-bottom: 19px; */
+    display: flex
+;
+    /* justify-content: center; */
+    align-items: flex-end;
+    /* margin-top: 19px; */
+    gap: 1.5px;
+    height: 20px;
+}
+.signal-barTable div {
+    width: 10px;
+    background-color: gray;
+    transition: background-color 0.3s ease, height 0.3s ease;
+}
+.signal-barTable .level-1 {
+    height: 20%;
+}
+.signal-barTable .level-2 {
+    height: 40%;
+}
+.signal-barTable .level-3 {
+    height: 60%;
+}
+.signal-barTable .level-4 {
+    height: 80%;
+}
+.signal-barTable .level-5 {
+    height: 100%;
+}
+
+.status-indicator {
+    left: 13px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.status-indicator .indicator {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: limegreen;
+    display: inline-block;
+}
+
+.footer {
+    border-radius: 14px;
+    display: flex;
+    width: 1900px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: #000000;
+    display: flex;
+    position: relative;
+}
+.logo {
+    font-size: 20px;
+}
+.footer .date-time {
+    margin-top: 18px;
+    color: #ffc400;
+    
+    font-size: 37px;
+    position: absolute;
+    right: 25px;
+    font-weight: bold;
+}
